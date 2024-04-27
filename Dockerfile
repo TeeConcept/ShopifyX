@@ -1,9 +1,9 @@
 FROM node:22-alpine
 
-COPY package.json ../raw/
-COPY src ../raw/
+WORKDIR /c/Users/HP/trevolib/ShopifyX
 
-WORKDIR .
+COPY package.json ./
+COPY src /c/Users/HP/trevolib/ShopifyX/
 
 RUN npm install
 
